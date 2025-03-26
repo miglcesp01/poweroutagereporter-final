@@ -32,7 +32,7 @@ export default function RootLayout({
               </nav>
             </div>
           </header>
-          <main className="flex-grow overflow-hidden">
+          <main className="flex-grow">
             {children}
           </main>
           <Toaster position="top-right" closeButton />
