@@ -32,9 +32,9 @@ export default function RootLayout({
               </nav>
             </div>
           </header>
-          <main className="flex-grow">
+          <div className="flex-grow">
             {children}
-          </main>
+          </div>
           <Toaster position="top-right" closeButton />
         </ThemeProvider>
       </body>

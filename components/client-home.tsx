@@ -18,7 +18,7 @@ export default function ClientHome() {
   const [reports, setReports] = useLocalStorage<OutageReport[]>("outage-reports", []);
 
   return (
-    <main className="container mx-auto px-4 py-8 overflow-hidden">
+    <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           <h2 className="text-xl font-semibold mb-4">Report a Power Outage</h2>
@@ -29,6 +29,6 @@ export default function ClientHome() {
           <OutageList reports={reports} setReports={setReports}/>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

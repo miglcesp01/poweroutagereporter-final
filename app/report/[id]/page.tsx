@@ -173,7 +173,7 @@ export default function ReportDetails() {
 
   if (!report) {
     return (
-      <main className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4">
         <Card>
           <CardContent className="pt-4">
             <p className="text-center text-muted-foreground">Report not found.</p>
@@ -187,7 +187,7 @@ export default function ReportDetails() {
             </div>
           </CardContent>
         </Card>
-      </main>
+      </div>
     )
   }
 
