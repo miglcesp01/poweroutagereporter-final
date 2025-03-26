@@ -11,7 +11,6 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 export const metadata: Metadata = {
   title: "Power Outage Reporter",
   description: "Report and track power outages in your area",
-  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -21,8 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-
-      <body className={`${inter.variable} flex flex-col lg:h-screen lg:overflow-hidden`}>
+      <body className={`${inter.variable} flex flex-col lg:overflow-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <header className="border-b border-border py-2 flex-shrink-0">
             <div className="container mx-auto px-4 flex items-center justify-between">
